@@ -1,76 +1,175 @@
-/* General Page Setup */
-body {
-  font-family: "Segoe UI", Tahoma, sans-serif;
-  background: #f9fafc;
-  color: #333;
+/* Reset */
+* {
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  box-sizing: border-box;
 }
 
-/* Header */
-header {
-  background: linear-gradient(90deg, #007acc, #00c6ff);
-  color: white;
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.9);
+  padding: 15px;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  color: #f8fafc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 50px 20px;
+  background: linear-gradient(135deg, #007acc, #00c6ff);
+  color: white;
 }
 
-header h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  animation: slide-in 1.5s ease;
 }
 
-header p {
-  font-size: 1.3rem;
+.hero-text .highlight {
+  color: #ffde59;
 }
 
-/* Section Styling */
-section {
-  max-width: 950px;
-  margin: 30px auto;
-  padding: 25px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  animation: fade-in 2s ease;
+}
+
+.btn {
+  background: #ffde59;
+  color: #0f172a;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Sections */
+.section {
+  padding: 100px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 h2 {
-  color: #007acc;
-  margin-bottom: 15px;
-}
-
-/* Projects */
-#projects div {
+  text-align: center;
+  color: #38bdf8;
   margin-bottom: 20px;
-  padding: 15px;
-  border-left: 4px solid #007acc;
-  background: #fdfdfd;
-  border-radius: 8px;
+  font-size: 2rem;
 }
 
-#projects div h3 {
-  margin-top: 0;
+/* Project Cards */
+.card {
+  background: #1e293b;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background: #334155;
 }
 
 /* Skills */
-ul {
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skills li {
   list-style: none;
-  padding: 0;
-}
-
-ul li {
-  display: inline-block;
-  background: #007acc;
-  color: white;
-  padding: 8px 14px;
-  margin: 6px;
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 10px 18px;
   border-radius: 20px;
-  font-size: 0.95rem;
+  font-weight: bold;
+  transition: transform 0.3s;
 }
 
-/* Hover Effect */
-section:hover {
-  transform: scale(1.01);
-  transition: all 0.3s ease-in-out;
+.skills li:hover {
+  transform: scale(1.1);
+  background: #0ea5e9;
+}
+
+/* Contact */
+#contact a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e293b;
+  margin-top: 50px;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
