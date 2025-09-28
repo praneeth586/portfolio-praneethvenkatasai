@@ -19,15 +19,15 @@
 
   <!-- Hero Section -->
   <header class="hero">
-    <div class="hero-text fade-in">
-      <h1>Hi, I'm <span class="highlight">Praneeth</span> 👋</h1>
+    <div class="hero-text">
+      <h1 class="typewriter">Hi, I'm Praneeth 👋</h1>
       <p>Master’s in Business Analytics & Artificial Intelligence @ USF</p>
-      <a href="#projects" class="btn">View My Work</a>
+      <a href="#projects" class="btn">Explore My Work</a>
     </div>
   </header>
 
   <!-- ABOUT ME -->
-  <section id="about" class="section fade-in">
+  <section id="about" class="section reveal">
     <h2>About Me</h2>
     <p>I am a results-driven Data Analyst and AI/ML Specialist with experience in 
        developing and deploying machine learning models, data-driven solutions, 
@@ -38,28 +38,21 @@
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section fade-in">
+  <section id="projects" class="section reveal">
     <h2>Projects</h2>
+
     <div class="card">
       <h3>📊 Security & Stability: A Data-Driven Analysis</h3>
       <p>Interactive Tableau dashboards analyzing peace, military spending, 
          and healthcare indices across regions.</p>
     </div>
+
     <div class="card">
       <h3>🏏 IPL Database Design & Analytics</h3>
       <p>Designed IPL ball-by-ball relational database with SQL queries, 
          EER diagrams, and predictive models.</p>
     </div>
-    <div class="card">
-      <h3>🧠 Brain Disease Classification</h3>
-      <p>Deep learning pipeline (MobileNet, ResNet, DenseNet) for MRI-based 
-         brain disease classification (92% accuracy).</p>
-    </div>
-    <div class="card">
-      <h3>👟 Nike Multimodal Product Search Bot</h3>
-      <p>Built multimodal RAG bot with CLIP embeddings, Florence-2, and DALL·E 3 
-         for text+image search and virtual try-on.</p>
-    </div>
+
     <div class="card">
       <h3>🩺 Liver Tumor Segmentation & Detection</h3>
       <p>Django + TensorFlow web app that segments tumors from liver CT scans, 
@@ -68,7 +61,7 @@
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section fade-in">
+  <section id="skills" class="section reveal">
     <h2>Skills</h2>
     <ul class="skills">
       <li>Python</li>
@@ -85,7 +78,7 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section fade-in">
+  <section id="contact" class="section reveal">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:saipraneeth271@gmail.com">saipraneeth271@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/praneethvenkatasai">linkedin.com/in/praneethvenkatasai</a></p>
@@ -95,5 +88,19 @@
   <footer>
     <p>© 2025 Praneeth Venkata Sai Eluri | Built with ❤️</p>
   </footer>
+
+  <!-- JS for reveal animations -->
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+    window.addEventListener("scroll", () => {
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+          reveals[i].classList.add("active");
+        }
+      }
+    });
+  </script>
 </body>
 </html>
