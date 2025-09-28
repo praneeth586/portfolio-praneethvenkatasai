@@ -39,7 +39,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #facc15; /* gold */
+  color: #facc15;
   text-shadow: 0 0 8px #facc15;
 }
 
