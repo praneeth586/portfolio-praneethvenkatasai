@@ -7,86 +7,93 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm Praneeth 👋</h1>
-    <p>Master’s in Business Analytics & Artificial Intelligence @ USF</p>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-text fade-in">
+      <h1>Hi, I'm <span class="highlight">Praneeth</span> 👋</h1>
+      <p>Master’s in Business Analytics & Artificial Intelligence @ USF</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
   </header>
 
   <!-- ABOUT ME -->
-  <section id="about">
+  <section id="about" class="section fade-in">
     <h2>About Me</h2>
     <p>I am a results-driven Data Analyst and AI/ML Specialist with experience in 
        developing and deploying machine learning models, data-driven solutions, 
-       and cloud-based applications. Proficient in Python, SQL, and data visualization 
+       and cloud-based applications. Proficient in Python, SQL, and visualization 
        tools like Tableau and Power BI, I specialize in predictive modeling, real estate 
-       market analysis, and AI-powered business solutions. I’m passionate about 
-       leveraging AI to solve complex problems and drive organizational growth:contentReference[oaicite:4]{index=4}.</p>
+       market analysis, and AI-powered business solutions. Passionate about 
+       leveraging AI to solve complex problems and drive organizational growth.</p>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects">
+  <section id="projects" class="section fade-in">
     <h2>Projects</h2>
-
-    <div>
+    <div class="card">
       <h3>📊 Security & Stability: A Data-Driven Analysis</h3>
-      <p>Used Tableau to analyze the relationship between military spending, public health 
-         investment, and peace indices. Created interactive dashboards comparing 
-         Global Peace Index, Global Military Index, and healthcare expenditures 
-         across regions:contentReference[oaicite:5]{index=5}.</p>
+      <p>Interactive Tableau dashboards analyzing peace, military spending, 
+         and healthcare indices across regions.</p>
     </div>
-
-    <div>
+    <div class="card">
       <h3>🏏 IPL Database Design & Analytics</h3>
-      <p>Built a relational database for IPL ball-by-ball data including matches, 
-         players, and seasons. Designed ER/EER diagrams and SQL queries for 
-         player stats, team analysis, and prediction models. Implemented data 
-         mining models with Python (Random Forest, Gradient Boosting, etc.) 
-         for match outcome predictions:contentReference[oaicite:6]{index=6}.</p>
+      <p>Designed IPL ball-by-ball relational database with SQL queries, 
+         EER diagrams, and predictive models.</p>
     </div>
-
-    <div>
-      <h3>🧠 Brain Disease Classification from MRI</h3>
-      <p>Developed a deep learning pipeline using MobileNet, ResNet-50, and DenseNet 
-         for brain disease classification and age estimation. Achieved 92% accuracy and 
-         reduced false positives by 15%:contentReference[oaicite:7]{index=7}.</p>
+    <div class="card">
+      <h3>🧠 Brain Disease Classification</h3>
+      <p>Deep learning pipeline (MobileNet, ResNet, DenseNet) for MRI-based 
+         brain disease classification (92% accuracy).</p>
     </div>
-
-    <div>
+    <div class="card">
       <h3>👟 Nike Multimodal Product Search Bot</h3>
-      <p>Built a multimodal retrieval-augmented generation (RAG) system with 
-         CLIP embeddings, Florence-2, and DALL·E 3 for text+image search 
-         and virtual try-on. Reduced inappropriate responses by 99% with 
-         AsyncIO guardrails:contentReference[oaicite:8]{index=8}.</p>
+      <p>Built multimodal RAG bot with CLIP embeddings, Florence-2, and DALL·E 3 
+         for text+image search and virtual try-on.</p>
     </div>
-
-    <div>
+    <div class="card">
       <h3>🩺 Liver Tumor Segmentation & Detection</h3>
-      <p>Developed a web-based application using Django and deep learning that analyzes liver 
-         CT-scan images to detect and segment tumors. The system calculates the percentage of 
-         affected area and classifies tumor stages (1–3) based on size. 
-         Implemented image processing with OpenCV, machine learning with TensorFlow, and 
-         database management with MySQL:contentReference[oaicite:9]{index=9}:contentReference[oaicite:10]{index=10}.</p>
+      <p>Django + TensorFlow web app that segments tumors from liver CT scans, 
+         calculates affected area %, and stages tumors.</p>
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills">
+  <section id="skills" class="section fade-in">
     <h2>Skills</h2>
-    <ul>
-      <li>Python, SQL, R, Java</li>
-      <li>Tableau, Power BI, Looker, Grafana</li>
-      <li>TensorFlow, PyTorch, HuggingFace</li>
-      <li>AWS, GCP, Azure</li>
-      <li>Machine Learning, Deep Learning, Data Visualization</li>
+    <ul class="skills">
+      <li>Python</li>
+      <li>SQL</li>
+      <li>R</li>
+      <li>Tableau</li>
+      <li>Power BI</li>
+      <li>TensorFlow</li>
+      <li>PyTorch</li>
+      <li>AWS</li>
+      <li>GCP</li>
+      <li>Azure</li>
     </ul>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
+  <section id="contact" class="section fade-in">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:saipraneeth271@gmail.com">saipraneeth271@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/praneethvenkatasai">linkedin.com/in/praneethvenkatasai</a></p>
     <p>GitHub: <a href="https://github.com/praneeth586">github.com/praneeth586</a></p>
   </section>
+
+  <footer>
+    <p>© 2025 Praneeth Venkata Sai Eluri | Built with ❤️</p>
+  </footer>
 </body>
 </html>
