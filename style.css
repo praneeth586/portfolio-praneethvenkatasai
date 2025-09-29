@@ -196,21 +196,4 @@ footer {
   margin-top: 50px;
   border-top: 2px solid #14b8a6;
 }
-.card {
-  display: block;
-  background: rgba(45, 30, 60, 0.9);
-  margin: 20px 0;
-  padding: 25px;
-  border-radius: 15px;
-  border-left: 5px solid #14b8a6;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-  transition: transform 0.4s ease, background 0.4s ease, border-color 0.4s;
-  text-decoration: none; /* removes underline */
-  color: inherit; /* keeps text color consistent */
-}
 
-.card:hover {
-  transform: translateY(-10px) scale(1.02);
-  background: rgba(75, 30, 75, 0.95);
-  border-color: #facc15;
-}
