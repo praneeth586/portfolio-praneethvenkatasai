@@ -137,25 +137,28 @@ h2 {
 
 /* Project Cards */
 .card {
-  background: rgba(45, 30, 60, 0.9);
-  margin: 20px 0;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto; /* spacing between each card */
   padding: 25px;
+  background: rgba(45, 30, 60, 0.95);
   border-radius: 15px;
-  border-left: 5px solid #14b8a6;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  border-left: 6px solid #14b8a6;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   transition: transform 0.4s ease, background 0.4s ease, border-color 0.4s;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  background: rgba(75, 30, 75, 0.95);
+  background: rgba(75, 30, 90, 0.95);
   border-color: #facc15;
 }
 
 /* Project Link Button */
 .btn-link {
   display: inline-block;
-  margin-top: 12px;
+  margin-top: 15px;
   padding: 10px 20px;
   background: linear-gradient(90deg, #facc15, #f59e0b);
   color: #0f172a;
