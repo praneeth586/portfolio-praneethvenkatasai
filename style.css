@@ -147,9 +147,27 @@ h2 {
 }
 
 .card:hover {
-  transform: translateY(-10px) scale(1.02);
+  transform: translateY(-8px);
   background: rgba(75, 30, 75, 0.95);
   border-color: #facc15;
+}
+
+/* Project Link Button */
+.btn-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #facc15, #f59e0b);
+  color: #0f172a;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-link:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 12px #facc15;
 }
 
 /* Skills */
@@ -196,4 +214,3 @@ footer {
   margin-top: 50px;
   border-top: 2px solid #14b8a6;
 }
-
